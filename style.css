@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+/* Navbar */
+header {
+    background: #2c3e50;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* home */
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin:30px 80px;
+    height: 90vh;
+}
+section {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: solid 1px #2c3e50;
+    flex-direction: column;
+    width: 100%;
+}
+section.home{
+    flex-direction: row;
+}
+section .leftside{
+    width: 50%;
+}
+section .leftside h1{
+    color:#2c3e50;
+}
+section .leftside p{
+    line-height: 27px;
+}
+section .rightside img{
+    width: 270px;
+    border-radius: 15px;
+}
+main a{
+    text-decoration: none;
+    color:#2c3e50;
+    padding: 10px;
+    border-radius:10px;
+    background:#fff;
+    border:1px solid #2c3e50;
+    margin-top: 10px;
+}
+/* courses */
+h2{
+    color:#2c3e50;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background: #ecf0f1;
+}
+
+/* Form */
+.addCourses{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+form {
+    width: 100%;
+    margin: auto;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: #1abc9c;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    width:100px;
+    border-radius:15px;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 765px) {
+    section.home{
+        flex-direction: column-reverse;
+    }
+    section.home img,
+    section.home .leftside{
+        width: 100%;
+    }
+
+}
